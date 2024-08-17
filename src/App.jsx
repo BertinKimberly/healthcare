@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 import ProfileWidget from "./components/ProfileWidget";
 import Chart from "./components/Chart";
+import BounceLoader from "react-spinners/BounceLoader" 
 
 const App = () => {
   const [patients, setPatients] = useState([]);
@@ -31,8 +32,12 @@ const App = () => {
   }, []);
 
   if (!patients.length) {
-    return <p>Loading...</p>;
-  }
+   return (
+     <div className="flex items-center justify-center min-h-screen">
+       <BounceLoader color="#01F0D0" />
+     </div>
+   );
+ }
 
   const handlePatientSelect = (patient) => {
     setSelectedPatient(patient); // Update selected patient
