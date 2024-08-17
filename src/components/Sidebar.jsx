@@ -1,7 +1,7 @@
 import React from "react";
 import Search from "../assets/search.svg";
 
-const Sidebar = ({ patients }) => {
+const Sidebar = ({ patients, onPatientSelect }) => {
   return (
     <div className="bg-white mt-6 rounded-lg w-[300px] p-4 fixed overflow-y-auto h-screen">
       <div className="flex mb-4 justify-between items-center">
@@ -12,7 +12,8 @@ const Sidebar = ({ patients }) => {
         {patients.map((patient, index) => (
           <div
             key={index}
-            className="flex items-center justify-between bg-gray-100 p-2 rounded-lg"
+            className="flex items-center justify-between bg-gray-100 p-2 rounded-lg cursor-pointer"
+            onClick={() => onPatientSelect(patient)} 
           >
             <div className="flex gap-2 items-center">
               <div className="flex items-center justify-center rounded-full w-10 h-10">

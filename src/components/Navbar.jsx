@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-white shadow-lg h-16 flex items-center justify-between px-6 rounded-xl sticky top-0 z-50">
+      <nav className="bg-white shadow-lg h-16 flex items-center justify-between px-6 rounded-xl fixed top-0 left-0 w-full z-50">
         <div className="flex items-center">
           <img src="../assets/TestLogo.svg" alt="Logo" className="h-10 w-auto" />
         </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-3">
           <img src="../assets/doctor.png" alt="Dr. Jose Simons" className="h-10 w-10 rounded-full object-cover" />
           <div className="text-sm">
-            <h1 className="font-semibold  text-sm text-gray-900">Dr. Jose Simons</h1>
+            <h1 className="font-semibold text-gray-900 text-sm">Dr. Jose Simons</h1>
             <p className="text-gray-600">General Practitioner</p>
           </div>
         </div>
