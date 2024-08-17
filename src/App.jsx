@@ -89,7 +89,7 @@ const App = () => {
               </div>
               <div className="bg-[#FFE6E9] rounded-lg p-4 flex flex-col items-center gap-4 w-[230px]">
                 <div className="bg-white flex items-center justify-center p-3 rounded-full w-[100px] h-[100px]">
-                  <img src="/assets/temperature.svg" alt="Temperature" />
+                  <img src="https://firebasestorage.googleapis.com/v0/b/ziba-pay.appspot.com/o/temperature.svg?alt=media&token=90b1989a-e30a-4e26-a86f-519ed810ce64" alt="Temperature" />
                 </div>
                 <p>Temperature</p>
                 <h4>98.6 F</h4>
@@ -97,7 +97,7 @@ const App = () => {
               </div>
               <div className="bg-[#FFE6E9] rounded-lg p-4 flex flex-col items-center gap-4 w-[230px]">
                 <div className="bg-white flex items-center justify-center p-3 rounded-full w-[100px] h-[100px]">
-                  <img src="/assets/temperature.svg" alt="Temperature" />
+                  <img src="https://firebasestorage.googleapis.com/v0/b/ziba-pay.appspot.com/o/temperature.svg?alt=media&token=90b1989a-e30a-4e26-a86f-519ed810ce64" alt="Temperature" />
                 </div>
                 <p>Temperature</p>
                 <h4>98.6 F</h4>
