@@ -6,6 +6,7 @@ import ProfileWidget from "./components/ProfileWidget";
 import Chart from "./components/Chart";
 import respiratory from "./assets/respiratory rate.svg"
 import temperature from "./assets/temperature.svg"
+import HeartBPM from "./assets/HeartBPM.svg"
 
 const App = () => {
    const [patients, setPatients] = useState([]);
@@ -22,7 +23,7 @@ const App = () => {
                }
             );
             const data = await response.json();
-            console.log(data); // Log the data to inspect the structure
+            console.log(data); 
             setPatients(data);
          } catch (error) {
             console.error("Error fetching data:", error);
@@ -55,7 +56,7 @@ const App = () => {
                         </div>
                         <Chart />
                      </div>
-                     <div className="flex flex-col ">
+                     <div className="flex flex-col">
                         <div className="pb-2 border-b">
                            <div className="flex">
                               <span>Systolic</span>
@@ -96,16 +97,16 @@ const App = () => {
                         <h4>98.6 F</h4>
                         <small className="mt-2">Normal</small>
                      </div>
-                     <div className="bg-[#E0F3FA] rounded-lg flex flex-col gap-4 p-4 w-[230px]">
+                     <div className="bg-[#FFE6F1] rounded-lg flex flex-col gap-4 p-4 w-[230px]">
                         <div className="bg-white flex items-center justify-center p-3 rounded-full w-[100px] h-[100px]">
                            <img
-                              src={respiratory}
+                              src={HeartBPM}
                               alt="diagnosis"
                            />
                         </div>
-                        <p>Respiratory Rate</p>
-                        <h4>20 bpm</h4>
-                        <small className="mt-2">Normal</small>
+                        <p>Heart Rate</p>
+                        <h4>78 bpm</h4>
+                        <small className="mt-2">Lower than Average</small>
                      </div>
                   </div>
                </div>
@@ -113,7 +114,7 @@ const App = () => {
                   <h3>Diagnostic List</h3>
                   <div className="mt-4">
                      <table>
-                        <thead className="bg-[#F6F7F8] p-2 rounded-md">
+                        <thead className="bg-[#F6F7F8] p-4 rounded-full">
                            <tr>
                               <th>Problem/Diagnosis</th>
                               <th>Description</th>
