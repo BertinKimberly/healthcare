@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-white shadow-lg h-16 flex items-center justify-between px-6 rounded-xl">
+      <nav className="bg-white shadow-lg h-16 flex items-center justify-between px-6 rounded-xl sticky top-0 z-50">
         <div className="flex items-center">
           <img src="../assets/TestLogo.svg" alt="Logo" className="h-10 w-auto" />
         </div>

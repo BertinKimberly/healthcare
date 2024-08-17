@@ -4,7 +4,7 @@ import download from "../assets/download.svg";
 
 const ProfileWidget = ({ patientData }) => {
   return (
-    <div className="fixed top-30 right-6 w-[300px]">
+    <div className="fixed top-20 right-6 w-[300px]">
       <div className="bg-white p-4 rounded-lg flex flex-col items-center gap-4">
         <div className="flex items-center justify-center rounded-full h-40 w-40">
           <img
