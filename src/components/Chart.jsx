@@ -15,7 +15,7 @@ const data = [
 
 export default function Chart() {
   return (
-    <div className="w-5/6 h-64"> 
+    <div className="w-full h-64">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           data={data}
