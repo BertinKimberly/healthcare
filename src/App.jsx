@@ -3,8 +3,6 @@ import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 import ProfileWidget from "./components/ProfileWidget";
 import Chart from "./components/Chart";
-import respiratory from "./assets/respiratory rate.svg";
-import temperature from "./assets/temperature.svg";
 
 const App = () => {
   const [patients, setPatients] = useState([]);
@@ -78,7 +76,7 @@ const App = () => {
             <div className="flex gap-4 mt-6">
               <div className="bg-[#E0F3FA] rounded-lg p-4 flex flex-col items-center gap-4 w-[230px]">
                 <div className="bg-white flex items-center justify-center p-3 rounded-full w-[100px] h-[100px]">
-                  <img src={respiratory} alt="Respiratory Rate" />
+                  <img src="/assets/respiratory rate.svg" alt="Respiratory Rate" />
                 </div>
                 <p>Respiratory Rate</p>
                 <h4>20 bpm</h4>
@@ -86,7 +84,7 @@ const App = () => {
               </div>
               <div className="bg-[#FFE6E9] rounded-lg p-4 flex flex-col items-center gap-4 w-[230px]">
                 <div className="bg-white flex items-center justify-center p-3 rounded-full w-[100px] h-[100px]">
-                  <img src={temperature} alt="Temperature" />
+                  <img src="/assets/temperature.svg" alt="Temperature" />
                 </div>
                 <p>Temperature</p>
                 <h4>98.6 F</h4>
@@ -94,7 +92,7 @@ const App = () => {
               </div>
               <div className="bg-[#FFE6E9] rounded-lg p-4 flex flex-col items-center gap-4 w-[230px]">
                 <div className="bg-white flex items-center justify-center p-3 rounded-full w-[100px] h-[100px]">
-                  <img src={temperature} alt="Temperature" />
+                  <img src="/assets/temperature.svg" alt="Temperature" />
                 </div>
                 <p>Temperature</p>
                 <h4>98.6 F</h4>

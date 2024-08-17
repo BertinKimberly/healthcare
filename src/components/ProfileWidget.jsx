@@ -1,6 +1,5 @@
 import React from "react";
 import { FaCalendar, FaDownload, FaPhone, FaUserShield, FaHeartbeat } from "react-icons/fa";
-import download from "../assets/download.svg";
 
 const ProfileWidget = ({ patientData }) => {
   return (
@@ -68,7 +67,7 @@ const ProfileWidget = ({ patientData }) => {
           {patientData.lab_results.map((result, index) => (
             <div key={index} className="flex justify-between items-center">
               <p>{result}</p>
-              <img src={download} alt="download"/>
+              <img src="/assets/download.svg" alt="download"/>
             </div>
           ))}
         </div>

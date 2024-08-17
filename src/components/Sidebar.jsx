@@ -1,12 +1,11 @@
 import React from "react";
-import Search from "../assets/search.svg";
 
 const Sidebar = ({ patients, onPatientSelect }) => {
   return (
     <div className="bg-white mt-6 rounded-lg w-[300px] p-4 fixed overflow-y-auto h-screen">
       <div className="flex mb-4 justify-between items-center">
         <h2 className="text-xl font-semibold">Patients</h2>
-        <img src={Search} alt="search" className="w-5 h-5" />
+        <img src="../assets/search.svg" alt="search" className="w-5 h-5" />
       </div>
       <div className="flex flex-col gap-4">
         {patients.map((patient, index) => (
